@@ -1,0 +1,386 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+  
+    
+   
+}
+
+.container {
+    display: flex;
+    height: 100vh;
+    overflow-y: auto; 
+}
+.left-pane {
+    width: 18%; /* Adjust the width as needed */
+    background-color:#272525;
+    color: #fff;
+    max-height: 85vh; /* Set a maximum height to prevent overflow */
+    overflow-y: auto; /* Enable vertical scrolling when content exceeds max-height */
+    margin-top: 80px;
+  
+}
+
+/* Style for rectangle items within the left pane */
+.rectangle-item {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 50px;
+    margin-bottom: 10px;
+}
+
+
+
+.right-pane {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    background-color: #272525;
+    margin-right: 30px;
+    color: #fff; /* Set text color to white or your desired color */
+}
+
+
+.top-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #444;
+    width: 96%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    padding: 5px;
+    height: 70px;
+  
+}
+
+.left-top {
+    display: flex;
+    align-items: center;
+    background-color: #2b2929;
+    height: 75px;
+    width: 20%;
+    position: relative; /* Add relative positioning */
+  
+}
+
+
+.middle-top {
+    flex: 1;
+    background-color: #2b2929;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 75px;
+    width: 40%;
+    }
+.right-top {
+    position: relative;
+    right: 0;
+    background-color: #2b2929;
+    display: flex;
+    align-items: center;
+    height: 75px;
+
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    width: 70%;
+    border-radius: 6px;
+    background-color: #3d3c3c;
+    position: relative;
+}
+
+.search-input {
+    padding: 15px;
+    border: none;
+    width: 90%;
+    border-radius: 40px;
+    background-color: #3d3c3c;
+}
+.search-input::after {
+    content: '';
+    width: 30px; /* Adjust the width of the icon */
+    height: 30px; /* Adjust the height of the icon */
+    position: absolute;
+    top: 50%;
+    right: 20px; /* Adjust the right distance from the input */
+    transform: translateY(-50%); /* Vertically center the icon */
+}
+.left-top-section{
+    flex: 1;
+    background-color:#272525;
+    text-align: center;
+    padding: 10px;
+   margin-right: 20px;
+   
+}
+
+.left-middle-section {
+    flex: 1;
+    background-color:#272525;
+    text-align: center;
+    padding: 13px;
+    width: 200px;
+    min-height: 80px; /* Set a minimum height to limit the section's height */
+    margin-right: 25px;
+}
+.left-bottom-section {
+    flex: 1;
+    background-color:#272525;
+    text-align: center;
+    padding: 20px; /* Adjust padding as needed */
+}
+
+
+
+
+.icon-circle {
+    background-color: #3d3a3a; /* Background color of the circular shape */
+    border-radius: 55%; /* Create a circular shape */
+    padding: 15px; /* Adjust padding to control the size of the circle */
+    color: #161111; /* Icon color */
+    margin-left: 10px; /* Move the icon a little to the right */
+}
+.icon-circle:hover{
+    background-color: #666;
+}
+.icon-circle1{
+    background-color: #2b2929;
+    border-radius: 50px;
+    padding: 15px;
+}
+.icon-circle1:hover{
+    background-color: #666;
+}
+
+.icon-container {
+    display: flex;
+    align-items: center;
+}
+
+.profile-icon {
+    margin-left: 100px;
+    margin-top: -28px;
+}
+
+.circle {
+    width: 30px;
+    height: 30px;
+    background-color: #6a0374;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 30px;
+}
+
+.profile-initial {
+    color: #fff;
+    font-size: 18px;
+}
+/* Your existing CSS styles here */
+
+.section {
+    position: relative;
+    /* Other styles for your section */
+    margin-top: -60px;
+}
+#hide-pane-btn {
+    position: relative;
+    top: 2px; /* Adjust the value to move the button down */
+    color: #f0e6e6; /* Change the color to red or your desired color */
+    font-size: 24px; /* Adjust the font size as needed */
+    background-color: #2b2929;
+    border: none;
+    margin-left: 5px;
+}
+#hide-pane-btn:hover{
+    background-color: #3d3a3a;
+}
+
+.button-container {
+    display: flex;
+    flex-direction: column;
+}
+.nav-item-rectangle {
+    background-color:#272525;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    margin: 0 0 10px 0;
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+.nav-item-rectangle i {
+    margin-right: 10px;
+}
+
+.nav-item-rectangle:hover {
+    background-color: #6b6d6e;
+}
+
+
+.rectangle-item {
+    background-color:#272525; /* Background color for the rectangle */
+    padding: 5px; /* Adjust padding as needed */
+    margin: 1px; /* Adjust margin as needed */
+    border-radius: 5px; /* Rounded corners for the rectangle */
+    display: flex; /* Align icon and text horizontally */
+    align-items: center; /* Center items vertically */
+    width: 170px;
+    height: 30px;
+    border: none;
+}
+
+.rectangle-item i {
+    margin-right: 10px; /* Adjust the margin as needed to create space between the icon and text */
+}
+
+.rectangle-item span {
+    color: #ebe1e1; /* Text color */
+}
+.rectangle-item:hover{
+    background-color: #777;
+}
+
+#you-text {
+    float: left;
+
+}
+.horizontal-line {
+    width: 80%;
+    height: 1px;
+    background-color: white;
+    margin: 5px 0; /* Adjust margin as needed to control spacing */
+    margin-left: 15px;
+}
+.website_logo {
+    margin-right: 10px; /* Adjust the margin as needed to control the spacing */
+    width: 140px;
+    height: 40px;
+}
+.top-right-section {
+    height: 45px;
+    background-color: #333; /* Adjust the background color as needed */
+    color: #fff; /* Adjust the text color as needed */
+    text-align: center; /* Center-align the content */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px; /* Adjust the font size as needed */
+}
+
+
+.right-body {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color:#272525;;
+    margin-right: 30px;
+    color: #fff;
+    align-items: center;
+    justify-content: center;
+    margin-top: 85px; /* Adjust this value to change the margin from the top */
+    flex-grow: 1;
+}
+.rectangle {
+    width: 100%;
+    height: 50px;
+    background-color:#272525;; /* Background color for the rectangle */
+    margin-bottom: 500px;
+}
+.scrollable-buttons {
+    max-height: 150px; /* Adjust the max-height for the scrollable area */
+    overflow-y: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+
+.scrollable-buttons button {
+    padding: 10px 20px; /* Adjust the padding as needed */
+    background-color: #161111;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+}
+.scrollable-buttons button:hover{
+    background-color: #666;
+}
+.video-streaming {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.horizontal-videos,
+.vertical-videos {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 10px;
+}
+
+.horizontal-videos img,
+.vertical-videos img {
+    max-width: 100%;
+    height: auto;
+}
+p{
+    height: 300px;
+    width: 300px;
+    margin-right: 20px;
+    margin-top: -50px;
+}
+p1{
+    height: 300px;
+    width: 300px;
+   margin-right: 20px;
+    margin-top: -50px;
+}
+p2{
+    height: 300px;
+    width: 300px;
+    margin-right: 20px;
+    margin-top: -50px;
+}
+.rectangle1 {
+    width: 200px;
+    height: 40px;
+    background-color: pink;
+    margin-top: 70px; /* Adjust the margin as needed */
+    margin-left: -200px;
+    
+}
+h{
+    height: 300px;
+    width: 300px;
+    margin-right: 20px;
+    margin-top: -100px;
+}
+h1{
+    height: 300px;
+    width: 300px;
+    margin-right: 20px;
+    margin-top: -90px;
+
+}
+h2{
+    height: 300px;
+    width: 300px;
+    margin-right: 20px;
+    margin-top: -90px;
+}
